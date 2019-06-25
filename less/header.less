@@ -1,8 +1,61 @@
 @import "variables.less";
 @import "mixins.less";
 
-header {
+header {  
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     img {
         .img-mixin(7px);
+    }   
+    
+    p {
+        margin-bottom: 0px;
+    } 
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width:100%;
+    }
+
+    .quote-btn {
+    
+    font-size: 18px;
+    border-radius: 10px;
+    width:170px;
+    padding: 1%; 
+    margin-top:1%;
+    text-align:end;
+    margin-bottom:1%;
+    background:none;
+    font-weight: bold;
+    border: 1px solid black;
+    }
+}  
+
+@media (max-width : @mobile-width)
+{   
+    header {
+
+        div {
+            width: 100%;
+        }
+    
+
+    .quote-btn {
+    
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 1%; 
+        margin-bottom:3%;
+        text-align:center;
+        background:none;
+        font-weight: bold;
+        border: 1px solid black;
+        }  
+
     }
 }
