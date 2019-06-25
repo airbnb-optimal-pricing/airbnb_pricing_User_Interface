@@ -1,0 +1,24 @@
+// Mixins in here
+
+.img-mixin(@radius) {
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: @radius;
+}
+
+.btn-mixin(@background, @color, @radius, @padding) {
+    background-color: @background;
+    border-radius: @radius;
+    color: @color;
+    text-align: center;
+    padding: @padding;
+}
+
+.footer-mixin(@background, @borderColor) {
+    width: 100%;
+    border-top: 1px dashed @background;
+    background: @background;
+    margin: 20px 0;
+    padding: 10px 0;
+}

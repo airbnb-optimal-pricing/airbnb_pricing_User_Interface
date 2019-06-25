@@ -1,156 +1,172 @@
 @media (min-width: 701px) {
-    nav {
-      display: flex;
-      justify-content: space-between;
-    }
-    nav div:first-child {
-      width: 60%;
-    }
-    nav div:last-child {
-      width: 40%;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-    }  
-  
+  nav {
+    display: flex;
+    justify-content: space-between;
   }
-  @media (max-width: 700px) {
-    nav {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    nav div:first-child {
-      text-align: center;
-    }
-    nav div:last-child {
-      display: flex;
-      justify-content: space-around;
-    }
+  nav div:first-child {
+    width: 60%;
   }
-  header img {
+  nav div:last-child {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  nav .btn {
+    font-weight: bold;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav div:first-child {
+    text-align: center;
+  }
+  nav div:last-child {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav .btn {
+    font-weight: bold;
+  }
+}
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 7px;
+}
+@media (min-width: 701px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  main section {
+    display: flex;
+    justify-content: space-between;
+  }
+  main section div {
+    width: 48%;
+  }
+  main section:nth-child(2) {
+    border-bottom: dashed 1.5px lightgray;
+    padding-bottom: 15px;
+  }
+  main .content-destination {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  main img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 7px;
   }
-  @media (min-width: 701px) {
-    main {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-    main section {
-      display: flex;
-      justify-content: space-between;
-    }
-    main section div {
-      width: 48%;
-    }
-    main section:nth-child(2) {
-      border-bottom: dashed 1.5px lightgray;
-      padding-bottom: 15px;
-    }
-    main .content-destination {
-      margin-left: 150px;
-      display: flex;
-      flex-direction: column;
-    }
-    main img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 7px;
-    }
-    main .content-pick {
-      padding: 0 20px ;
-    }
-    main .content-pick .btn {
-      background-color: #17A2B8;
-      border-radius: 13px;
-      color: white;
-      text-align: center;
-      padding: 5px;
-    }
+  main .content-pick {
+    padding: 0 20px ;
   }
-  @media (max-width: 700px) {
-    main {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    main img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 7px;
-    }
-    main .inverse-content {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-    main .content-pick {
-      padding: 0 20px ;
-    }
-    main .content-pick .btn {
-      background-color: aqua;
-      border-radius: 13px;
-      color: white;
-      text-align: center;
-      padding: 5px;
-    }
+  main .content-pick .btn {
+    background-color: #17A2B8;
+    border-radius: 13px;
+    color: white;
+    text-align: center;
+    padding: 5px;
   }
-  @media (min-width: 701px) {
-    .footer {
-      width: 100%;
-      border-top: 1px dashed #FFEBCD;
-      background: whitesmoke;
-      margin: 20px 0;
-      padding: 10px 0;
-    }
-    .footer p {
-      text-align: center;
-      margin-right: 10%;
-      color: #212529;
-    }
+  main .content-pick .destination {
+    width: 300px;
   }
-  @media (max-width: 700px) {
-    .footer {
-      width: 100%;
-      border-top: 1px dashed #FFEBCD;
-      background: whitesmoke;
-      margin: 20px 0;
-      padding: 10px 0;
-    }
-    .footer p {
-      text-align: center;
-      color: #212529;
-    }
+  main .content-pick .destination h4 {
+    font-weight: bold;
   }
-  hr {
-    border-top: dashed 1.5px lightgray;
+}
+@media (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
-    font-weight: normal;
-    color: black;
+  main img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 7px;
   }
-  a {
-    color: inherit;
-    text-decoration: none;
+  main .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
   }
-  @media (min-width: 701px) {
-    .container {
-      width: 50%;
-      margin: 0 auto;
-    }
+  main .content-pick {
+    padding: 0 20px ;
   }
-  @media (max-width: 700px) {
-    .container {
-      margin: 0px 10px;
-    }
+  main .content-pick .btn {
+    background-color: aqua;
+    border-radius: 13px;
+    color: white;
+    text-align: center;
+    padding: 5px;
   }
-  
+  main .content-pick .destination {
+    width: 100%;
+  }
+  main .content-pick .destination h4 {
+    font-weight: bold;
+  }
+}
+@media (min-width: 701px) {
+  .footer {
+    width: 100%;
+    border-top: 1px dashed #FFEBCD;
+    background: #FFEBCD;
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+  .footer p {
+    text-align: center;
+    margin-right: 10%;
+    color: #212529;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    width: 100%;
+    border-top: 1px dashed #FFEBCD;
+    background: #FFEBCD;
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+  .footer p {
+    text-align: center;
+    color: #212529;
+  }
+}
+hr {
+  border-top: dashed 1.5px lightgray;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Indie Flower';
+  font-weight: normal;
+  color: black;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+@media (min-width: 701px) {
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    margin: 0px 10px;
+  }
+}
