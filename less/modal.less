@@ -1,0 +1,66 @@
+@import "variables.less";
+
+#modal {
+    background: black;
+    padding-left: 10px;
+    font-size: 1.5em;
+    border: solid 2px @sandy-beach;
+    border-radius: 13px;
+  
+    position: fixed;
+    width: 40%;
+    top: 80%;
+    left: 55%;
+    margin: -25% 0 0 -25%;
+  
+    /* Embiggen */
+    transform: scale(1.5); /* prefix me */
+  
+    /* Hidden */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+
+    dt {
+      font-weight: bold;
+      color: white;
+    }
+    dd {
+      color: @sandy-beach;
+    }
+  }
+
+  #page-wrap {
+    transition: all 0.4s ease;
+  }
+
+  .dialog-Open {
+    
+    #page-wrap { 
+
+    /* Blur and de-color */
+    -webkit-filter: blur(5px) grayscale(50%);
+  
+    /* Recede */
+    -webkit-transform: scale(0.9);
+
+    }
+
+    #modal {
+      /* Regular size and visible */
+      transform: scale(1); /* prefix me */
+      opacity: 0.5;
+
+      /* Clickable */
+      pointer-events: auto;
+    }
+  }
+
+  @media (max-width : @mobile-width)
+  {
+    #modal {
+      width: 100%;
+      left:25%;
+      top:20%;
+    }
+  } 

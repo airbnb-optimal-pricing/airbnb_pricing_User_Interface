@@ -1,0 +1,62 @@
+@import "variables.less";
+
+//For desktop
+@media (min-width: @desktop-min-width) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+
+    div:first-child {
+      width: 50%;
+    }
+    div:last-child {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-size: 25px;
+    }
+
+    .btn {
+      font-weight: bold;
+    }
+    
+    .logo {
+      height:3em;
+      width:3em;
+      display:block;
+      fill:currentColor
+    }
+  }
+}
+
+// For mobile
+@media (max-width: @mobile-width) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    div:first-child {
+      justify-content: center;
+    }
+
+    div:last-child {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .btn {
+      font-weight: bold;
+    }
+
+    .logo {
+      height:5em;
+      width:5em;
+      display:block;
+      fill:currentColor;
+      margin: auto;
+    }
+  }
+}

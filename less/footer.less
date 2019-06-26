@@ -1,0 +1,27 @@
+@import "variables.less";
+@import "mixins.less";
+
+
+// For desktop
+@media (min-width: @desktop-min-width) {
+  .footer {
+    .footer-mixin(@sandy-beach, @silver);
+    
+    p {
+      text-align: center;
+      margin-right:10%;
+      color: @font-color;
+    }
+  }
+}
+// For mobile
+@media (max-width: @mobile-width) {
+  .footer {
+    .footer-mixin(@sandy-beach, @silver);
+    
+    p {
+      text-align: center;
+      color: @font-color;
+    }
+  }
+}
