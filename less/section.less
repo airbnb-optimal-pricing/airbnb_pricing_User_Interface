@@ -3,80 +3,80 @@
 
 // For desktop
 @media (min-width: @desktop-min-width) {
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-        section {
-            display: flex;
-            justify-content: space-between;
+    section {
+      display: flex;
+      justify-content: space-between;
 
-            div {
-                width: 48%;
-            }
-        }
-
-        section:nth-child(2) {
-            border-bottom: dashed 1.5px lightgray;
-            padding-bottom: 15px;
-        }
-
-        .content-destination {
-            margin-left: 150px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        img {
-            .img-mixin(7px);
-        }
-
-        .content-pick {
-            padding: 0 20px ;
-            .btn {
-               .btn-mixin(@eastern-blue,white, 13px, 5px);
-            }  
-              .destination { 
-                width: 300px;
-
-                h4 {
-                    font-weight: bold;  
-                }
-              }  
-        }
+      div {
+        width: 48%;
+      }
     }
+
+    section:nth-child(2) {
+      border-bottom: dashed 1.5px lightgray;
+      padding-bottom: 15px;
+    }
+
+    .content-destination {
+      margin-left: 150px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    img {
+      .img-mixin(7px);
+    }
+
+    .content-pick {
+      padding: 0 20px;
+      .btn {
+        .btn-mixin(@eastern-blue, white, 13px, 5px);
+      }
+      .destination {
+        width: 300px;
+
+        h4 {
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
 // For mobile
 @media (max-width: @mobile-width) {
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-        img {
-           .img-mixin(7px);
-        }
-
-        .inverse-content {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-
-        .content-pick {
-            padding: 0 20px ;
-            .btn {
-               .btn-mixin(aqua,white, 13px, 5px);
-            }  
-             
-            .destination { 
-                width: 100%;
-               
-                h4 {
-                    font-weight: bold;  
-                }
-              }  
-        }
+    img {
+      .img-mixin(7px);
     }
+
+    .inverse-content {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .content-pick {
+      padding: 0 20px;
+      .btn {
+        .btn-mixin(aqua, white, 13px, 5px);
+      }
+
+      .destination {
+        width: 100%;
+
+        h4 {
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }

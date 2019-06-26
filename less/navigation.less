@@ -1,48 +1,47 @@
 @import "variables.less";
 
-
 //For desktop
 @media (min-width: @desktop-min-width) {
-    nav {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 3%;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
 
-        div:first-child {
-            width: 60%;
-        }
-        div:last-child {
-            width: 40%;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }  
-
-        .btn {
-            font-weight: bold;
-        }
+    div:first-child {
+      width: 60%;
     }
+    div:last-child {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-size: 25px;
+    }
+
+    .btn {
+      font-weight: bold;
+    }
+  }
 }
 
 // For mobile
 @media (max-width: @mobile-width) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%; 
-      
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
-        div:first-child {
-            text-align: center;
-        }
-
-        div:last-child {
-            display: flex;
-            justify-content: space-around;
-        }   
-
-        .btn {
-            font-weight: bold;
-        }
+    div:first-child {
+      text-align: center;
     }
+
+    div:last-child {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .btn {
+      font-weight: bold;
+    }
+  }
 }
