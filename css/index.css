@@ -246,7 +246,7 @@ header .faq-btn {
 @media (max-width: 700px) {
   #modal {
     width: 100%;
-    left: 20%;
+    left: 25%;
     top: 20%;
   }
 }
