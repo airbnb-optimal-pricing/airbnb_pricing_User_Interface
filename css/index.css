@@ -5,10 +5,10 @@
     margin-bottom: 3%;
   }
   nav div:first-child {
-    width: 60%;
+    width: 50%;
   }
   nav div:last-child {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
