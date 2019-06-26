@@ -17,6 +17,12 @@
   nav .btn {
     font-weight: bold;
   }
+  nav .logo {
+    height: 3em;
+    width: 3em;
+    display: block;
+    fill: currentColor;
+  }
 }
 @media (max-width: 700px) {
   nav {
@@ -25,7 +31,7 @@
     width: 100%;
   }
   nav div:first-child {
-    text-align: center;
+    justify-content: center;
   }
   nav div:last-child {
     display: flex;
@@ -33,6 +39,13 @@
   }
   nav .btn {
     font-weight: bold;
+  }
+  nav .logo {
+    height: 5em;
+    width: 5em;
+    display: block;
+    fill: currentColor;
+    margin: auto;
   }
 }
 header {
@@ -55,13 +68,13 @@ header div {
   justify-content: flex-end;
   width: 100%;
 }
-header .quote-btn {
-  font-size: 18px;
+header .faq-btn {
+  font-size: 20px;
   border-radius: 10px;
-  width: 170px;
+  width: 200px;
   padding: 1%;
   margin-top: 1%;
-  text-align: end;
+  text-align: center;
   margin-bottom: 1%;
   background: none;
   font-weight: bold;
@@ -187,31 +200,55 @@ header .quote-btn {
     color: #212529;
   }
 }
-.menu-button {
-  position: absolute;
-  left: 20px;
-  cursor: pointer;
-}
-.menu {
-  display: none;
-  position: fixed;
-  top: 75px;
-  left: 0;
-  width: 250px;
-  height: 100vh;
-  border-left: none;
+#modal {
+  background: black;
+  padding-left: 10px;
+  font-size: 1.5em;
+  border: solid 2px #FFEBCD;
   border-radius: 13px;
-  border-bottom: none;
-  z-index: 1;
+  position: fixed;
+  width: 40%;
+  top: 80%;
+  left: 55%;
+  margin: -25% 0 0 -25%;
+  /* Embiggen */
+  transform: scale(1.5);
+  /* prefix me */
+  /* Hidden */
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
 }
-.menu ul li {
-  list-style-type: none;
-  font-size: 15px;
-  padding: 20px 0;
-  text-align: center;
+#modal dt {
+  font-weight: bold;
+  color: white;
 }
-.menu--open {
-  display: block;
+#modal dd {
+  color: #FFEBCD;
+}
+#page-wrap {
+  transition: all 0.4s ease;
+}
+.dialog-Open #page-wrap {
+  /* Blur and de-color */
+  -webkit-filter: blur(5px) grayscale(50%);
+  /* Recede */
+  -webkit-transform: scale(0.9);
+}
+.dialog-Open #modal {
+  /* Regular size and visible */
+  transform: scale(1);
+  /* prefix me */
+  opacity: 0.5;
+  /* Clickable */
+  pointer-events: auto;
+}
+@media (max-width: 700px) {
+  #modal {
+    width: 100%;
+    left: 20%;
+    top: 20%;
+  }
 }
 hr {
   border-top: dashed 1.5px lightgray;

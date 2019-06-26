@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
-    <script src="./Menu/menu.js" async></script>
+    <script src="./Menu/dialog.js" async></script>
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -18,144 +18,157 @@
   </head>
 
   <body>
-    <div class="container home">
-      <nav>
-        <div><i class="material-icons menu-button" id= "page-wrap">view_headline</i></div>
-        <div>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
-          <a href="#" class="btn">Login</a>
-        </div>
-      </nav>
-      <hr />
-
-      <div class="menu"  id="modal">
-          <ul>
-            <li>Where is your property located ?</li>
-            <li>How many people will you accommodate ?</li>
-            <li>Number of Bedrooms </li>
-            <li>Bed Type</li>
-            <li>Numbers of Bathroom </li>
-            <li>Log Out</li>
-          </ul>
-        </div>
-
-      <header>
-        <img
-          class="funbus"
-          src="Images/kamen-atanassov-xhQhvAkoaZg-unsplash.jpg"
-          alt="funbus"
-        />
-        <h1>Airbnb Price Navigator</h1>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more -or-less normal distribution
-          of letters, as opposed to using 'Content here, content here', making
-          it look like readable English. Many desktop publishing packages and
-          web page editors now use Lorem Ipsum as their default model text, and
-          a search for 'lorem ipsum' will uncover many web sites still in their
-          infancy.
-        </p>
-        <div><button class="quote-btn">Quote my space</button></div>
-      </header>
-      <hr />
-
-      <main>
-        <section class="content-section">
-          <div class="text-content">
-            <h2>Learn how to host</h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable. If you are going to use a passage of Lorem
-              Ipsum, you need to be sure there isn't anything embarrassing
-              hidden in the middle of text. All the Lorem Ipsum generators on
-              the Internet tend to repeat predefined chunks as necessary, making
-              this the first true generator on the Internet. It uses a
-              dictionary of over 200 Latin words, by injected humour, or
-              randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure
-              there isn't anything embarrassing hidden in the middle of text.
-            </p>
+    <div id="page-wrap">
+      <div class="container home">
+        <nav>
+          <div>
+              <svg class="logo" viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg>
           </div>
-          <div class="img-content">
-            <img
-              src="Images/francesca-tosolini-lTILrQvFbIc-unsplash (1).jpg"
-              alt="Let's go on an adventure!"
-            />
+          <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#" class="btn">Login</a>
           </div>
-        </section>
-        <section class="content-section inverse-content">
-          <div class="img-content">
-            <img
-              src="Images/evan-dvorkin-F7FJG9l5N3o-unsplash.jpg"
-              class="img-fluid rounded"
-              alt="Lets have fun!"
-            />
-          </div>
-          <div class="text-content">
-            <h2>Ready to earn ?</h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don't look even
-              slightly believable. If you are going to use a passage of Lorem
-              Ipsum, you need to be sure there isn't anything embarrassing
-              hidden in the middle of text. All the Lorem Ipsum generators on
-              the Internet tend to repeat predefined chunks as necessary, making
-              this the first true generator on the Internet. It uses a
-              dictionary of over 200 Latin words, by injected humour, or
-              randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure
-              there isn't anything embarrassing hidden in the middle of text.
-            </p>
-          </div>
-        </section>
-        <section class="content-destination">
-          <hr />
-          <h2>Pick Your Destination</h2>
-          <p>
-            Expedition excursion design darn excursion fun, clean simple
-            organized WordPress Travel colorful webdesign. Traveler blogger
-            website design expedition clean excursion traveling.
-          </p>
+        </nav>
+        <hr />
+  
+        <header>
           <img
-            src="Images/pixasquare-4ojhpgKpS68-unsplash.jpg"
-            alt="Second slide"
+            class="funbus"
+            src="Images/kamen-atanassov-xhQhvAkoaZg-unsplash.jpg"
+            alt="funbus"
           />
-          <hr />
-        </section>
-        <section class="content-pick">
-          <div class="destination">
-            <h4>List your space for free</h4>
+          <h1>Airbnb Price Navigator</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by the
+            readable content of a page when looking at its layout. The point of
+            using Lorem Ipsum is that it has a more -or-less normal distribution
+            of letters, as opposed to using 'Content here, content here', making
+            it look like readable English. Many desktop publishing packages and
+            web page editors now use Lorem Ipsum as their default model text, and
+            a search for 'lorem ipsum' will uncover many web sites still in their
+            infancy.
+          </p>
+          <div><button class="faq-btn">What you need to provide</button></div>
+        </header>
+        <hr />
+  
+        <main>
+          <section class="content-section">
+            <div class="text-content">
+              <h2>Learn how to host</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet tend to repeat predefined chunks as necessary, making
+                this the first true generator on the Internet. It uses a
+                dictionary of over 200 Latin words, by injected humour, or
+                randomised words which don't look even slightly believable. If you
+                are going to use a passage of Lorem Ipsum, you need to be sure
+                there isn't anything embarrassing hidden in the middle of text.
+              </p>
+            </div>
+            <div class="img-content">
+              <img
+                src="Images/francesca-tosolini-lTILrQvFbIc-unsplash (1).jpg"
+                alt="Let's go on an adventure!"
+              />
+            </div>
+          </section>
+          <section class="content-section inverse-content">
+            <div class="img-content">
+              <img
+                src="Images/evan-dvorkin-F7FJG9l5N3o-unsplash.jpg"
+                class="img-fluid rounded"
+                alt="Lets have fun!"
+              />
+            </div>
+            <div class="text-content">
+              <h2>Ready to earn ?</h2>
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet tend to repeat predefined chunks as necessary, making
+                this the first true generator on the Internet. It uses a
+                dictionary of over 200 Latin words, by injected humour, or
+                randomised words which don't look even slightly believable. If you
+                are going to use a passage of Lorem Ipsum, you need to be sure
+                there isn't anything embarrassing hidden in the middle of text.
+              </p>
+            </div>
+          </section>
+          <section class="content-destination">
+            <hr />
+            <h2>Pick Your Destination</h2>
             <p>
-              Expedition excursion design excursion fun, clean simple organized
-              WordPress Travel colorful webdesign. Traveler blogger website
-              design expedition clean excursion traveling.
+              Expedition excursion design darn excursion fun, clean simple
+              organized WordPress Travel colorful webdesign. Traveler blogger
+              website design expedition clean excursion traveling.
             </p>
-          </div>
-          <div class="destination">
-            <h4>Decide how you want to host</h4>
-            <p>
-              Expedition excursion design excursion fun, clean simple organized
-              WordPress Travel colorful webdesign. Traveler blogger website
-              design expedition clean excursion traveling.
-            </p>
-          </div>
-          <div class="destination">
-            <h4>Welcome your first guest</h4>
-            <p>
-              Expedition excursion design excursion fun, clean simple organized
-              WordPress Travel colorful webdesign. Traveler blogger website
-              design expedition clean excursion traveling.
-            </p>
-          </div>
-        </section>
-      </main>
+            <img
+              src="Images/pixasquare-4ojhpgKpS68-unsplash.jpg"
+              alt="Second slide"
+            />
+            <hr />
+          </section>
+          <section class="content-pick">
+            <div class="destination">
+              <h4>List your space for free</h4>
+              <p>
+                Expedition excursion design excursion fun, clean simple organized
+                WordPress Travel colorful webdesign. Traveler blogger website
+                design expedition clean excursion traveling.
+              </p>
+            </div>
+            <div class="destination">
+              <h4>Decide how you want to host</h4>
+              <p>
+                Expedition excursion design excursion fun, clean simple organized
+                WordPress Travel colorful webdesign. Traveler blogger website
+                design expedition clean excursion traveling.
+              </p>
+            </div>
+            <div class="destination">
+              <h4>Welcome your first guest</h4>
+              <p>
+                Expedition excursion design excursion fun, clean simple organized
+                WordPress Travel colorful webdesign. Traveler blogger website
+                design expedition clean excursion traveling.
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div id="modal">
+      <dl>
+        <dt>Zipcode</dt>
+        <dd>You property location zip code. </dd>
+        <dt>Property Type</dt>
+        <dd>What type of property is it? Condo, Town House, Single Family etc.</dd>
+        <dt>Entire Property or partial</dt>
+        <dd>Are you renting entire property or just private room(s).</dd>
+        <dt>Accomodations</dt>
+        <dd>How many people will be accomodated by this property.</dd>
+        <dt>Number of Bedrooms </dt>
+        <dd>How many bedrooms are your planning to rent.</dd>
+        <dt>Number of Beds</dt>
+        <dd>How many beds are in each room.</dd>
+        <dt>Bed Type</dt>
+        <dd>What type of bed it is ? Twin, Queen, King etc.</dd>
+        <dt>Numbers of Bathrooms</dt>
+        <dd>How many bathrooms come with the property.</dd>
+      </dl>
     </div>
     <!-- container -->
 
