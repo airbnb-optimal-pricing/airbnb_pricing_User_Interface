@@ -1,0 +1,135 @@
+/* Marketing Page */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+
+} 
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 5rem;
+    flex-direction: row;
+    
+    
+}
+
+ .top-img {
+    margin: 0 auto;
+    padding: 1rem;
+    height: 20rem;
+    width: 30rem;
+    
+} 
+
+
+.top-text {
+    
+    width: 30rem;
+    
+}
+
+button {
+    background: black;
+    color: whitesmoke;
+
+}
+
+
+h2 {
+
+    text-align: center;
+
+}
+
+
+ .rental-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 1rem;
+
+    
+
+} 
+
+
+
+
+
+
+
+img {
+    height: 20rem;
+    width: 30rem;
+    
+}
+
+
+.test-heading {
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+    
+    border-top: .05rem solid black;
+    margin-top: 2rem;
+}
+
+
+
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 1rem;
+    align-content: center;
+    
+}
+
+
+
+.john {
+    height: 18rem;
+    width: 20rem;
+    padding: 1rem;
+
+
+}
+
+.jane {
+    height: 18rem;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.jerry {
+    height: 18rem;
+    width: 20rem;
+    padding: 1rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+
+}
+
+
+
+
+   
+
+
