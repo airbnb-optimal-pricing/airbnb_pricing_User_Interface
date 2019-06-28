@@ -44,9 +44,6 @@ img {
     text-align: center;
   }
 }
-img:hover {
-  border: 1% solid red;
-}
 button {
   background: white;
   color: black;
